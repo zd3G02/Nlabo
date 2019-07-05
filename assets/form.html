@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Form - ソライロ病院</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="inquiry">
+<header id="top">
+        <div id="logo"><a href="index.html"><img src="images/logo.jpg" alt="Logo"></a></div>
+        <h1><a href="index.html"><img src="images/name.jpg" alt="NAKAGUCHI LABORATORY"></a></h1>
+
+        <nav>
+            <ul id="navi">
+                <li><a href="http://nlab.tms.chiba-u.jp/book/" target="_blank">蔵書DB</a></li>
+                <li><a href="http://nlab.tms.chiba-u.jp/gitbucket/signin?redirect=%2F" target="_blank">Git</a></li>
+                <li><a href="https://nlab.tms.chiba-u.jp/moodle/login/index.php" target="_blank">Moodle</a></li>
+                <li><a href="https://nakaguchilab.slack.com/" target="_blank">Slack</a></li>
+            </ul>
+        </nav>
+    </header>
+<nav>
+        <ul id="g_navi">
+            <li id="nav_policy"><a href="policy.html">中口研究室について</a></li>
+            <li id="nav_facility"><a href="facility.html">研究テーマ</a></li>
+            <li id="nav_sorce"><a href="sorce.html">業績</a></li>
+            <li id="nav_inquiry"><a href="inquiry.html">セミナー</a></li>
+        </ul>
+    </nav>
+<div id="level">
+	<ul>
+		<li><a href="index.html">ホーム</a>&gt;</li>
+		<li>お問い合わせ</li>
+	</ul>
+</div>
+<div id="contents">
+	<div id="main">
+		<article>
+			<h1>お問い合わせ</h1>
+			<p>当病院の診療に関するご質問やご意見・ご要望など、お気軽にお問い合わせください。</p>
+			<p>下記の注意事項をよくお読みいただき、お問い合わせください。</p>
+			<ul>
+				<li>「お問い合わせ種類」から必要な項目を選択してください。</li>
+				<li>お問い合わせいただいてから24時間以内にご回答いたします。</li>
+				<li>ご記入いただいた個人情報は、お問い合わせの回答以外には使用いたしません。</li>
+			</ul>
+			<form action="#">
+				<p><label>お名前（必須）<br>
+				<input type="text" name="name" required></label></p>
+				<p><label>電話番号（必須）<br>
+				<input type="tel" name="tel" required></label></p>
+				<p>お問い合わせ種類<br>
+				<label><input type="checkbox" name="type" value="0">診療・検査について</label>
+				<label><input type="checkbox" name="type" value="1">その他</label></p>
+				<p><label>お問い合わせ内容<br>
+				<textarea name="comment"></textarea></label></p>
+				<p><input type="submit" value="確認する"></p>
+			</form>
+		</article>
+	</div>
+	<div id="sub">
+		<aside>
+			<a href="facility.html">
+				<dl>
+					<dt><img src="images/banner_facility.png" alt="施設紹介"></dt>
+					<dd>充実した研究施設のご紹介</dd>
+				</dl>
+			</a>
+		</aside>
+	</div>
+</div>
+<footer>
+	<p id="pagetop"><a href="#top">ページの先頭へ戻る</a></p>
+	<div id="info_group">
+		<address>東京都八王子市XXX-X 電話 代表：042-XXX-XXXX 外来受付：042-XXX-XXXX</address>
+		<p><small>Copyright 2015 SORAIRO HOSPITAL All rights reserved.</small></p>
+	</div>
+</footer>
+</body>
+</html>
