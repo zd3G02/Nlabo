@@ -3,6 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="script.js"></script>
     <title>NAKAGUCHI LABORATORY</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 480px)">
@@ -10,31 +14,39 @@
 
 <body>
     <header id="top">
-        <div id="logo"><a href="index.html"><img src="images/logo.jpg" alt="Logo"></a></div>
-        <h1><a href="index.html"><img src="images/name.jpg" alt="NAKAGUCHI LABORATORY"></a></h1>
-
-        <nav>
+        <div id="logo"><a href="index.html"><img src="images/logo.jpg" alt="Logo"></a>
+            <div id="title">
+                <h1><a href="index.html"><img src="images/name.jpg" alt="NAKAGUCHI LABORATORY"></a></h1>
+            </div>
             <ul id="navi">
                 <li><a href="http://nlab.tms.chiba-u.jp/book/" target="_blank">蔵書DB</a></li>
                 <li><a href="http://nlab.tms.chiba-u.jp/gitbucket/signin?redirect=%2F" target="_blank">Git</a></li>
                 <li><a href="https://nlab.tms.chiba-u.jp/moodle/login/index.php" target="_blank">Moodle</a></li>
                 <li><a href="https://nakaguchilab.slack.com/" target="_blank">Slack</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
     <nav>
         <ul id="g_navi">
+            <li id="nav_home"><a href="index.html">Home</a></li>
             <li id="nav_policy"><a href="policy.html">中口研究室について</a></li>
             <li id="nav_facility"><a href="facility.html">研究テーマ</a></li>
             <li id="nav_sorce"><a href="sorce.html">業績</a></li>
             <li id="nav_inquiry"><a href="inquiry.html">セミナー</a></li>
+            <li id="form_inquiry"><a href="form.html">お問い合わせ</a></li>
         </ul>
     </nav>
     <div id="slider">
-        <ul id="">
-            <li><img src="images/Medical.jpg" alt="一人ひとりに向き合った医療を"></li>
-            <li><img src="images/vr.jpg" alt="充実の検査を快適な空間で ソライロ病院の人間ドック"></li>
-            <li><img src="images/untitled-6.jpg" alt="看護師募集中"></li>
+        <ul id="slide">
+            <li id="a">
+                <!-- <img src="images/Medical.jpg" alt="最先端の医療を"> -->
+            </li>
+            <li id="b">
+                <!-- <img src="images/vr.jpg" alt="日々の研究にて"> -->
+            </li>
+            <li id="c">
+                <!-- <img src="images/untitled-6.jpg" alt="安全な技術"> -->
+            </li>
         </ul>
     </div>
     <div id="contents">
@@ -64,16 +76,11 @@
         <p id="pagetop"><a href="#top">ページの先頭へ戻る</a></p>
         <div id="info_group">
             <address>連絡先
-
-所属：千葉大学フロンティア医工学センター
-
-氏名：教授 中口俊哉
-
-住所：〒263-8522 千葉市稲毛区弥生町1-33
-
-電話/Fax： 043-290-3296（直通）
-
-E-Mail：nakaguchi の後に @faculty.chiba-u.jp を付けてください．</address>
+                所属：千葉大学フロンティア医工学センター
+                氏名：教授 中口俊哉
+                住所：〒263-8522 千葉市稲毛区弥生町1-33
+                電話/Fax： 043-290-3296（直通）
+                E-Mail：nakaguchi の後に @faculty.chiba-u.jp を付けてください．</address>
             <p><small>Copyright: Nakaguchi Lab. Chiba Univ. 2011 All rights reserved.</small></p>
         </div>
     </footer>

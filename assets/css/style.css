@@ -2,154 +2,325 @@
 
 /* 基本レイアウト ここから↓ */
 @import url(common.css);
+
 body {
-	line-height: 1.4em;
-}
-header, nav, #level, #contents, footer {
-	width: 906.4px;
-	margin: 0 auto 0 auto;
-	/*background-color: #321;*/
-}
-#top nav{
-
-}
-header nav #navi{
-position: relative;
-
-	right: 0;
-	bottom: 15px;
-	list-style-type: none;
-	overflow: hidden;
-	margin: 0px ;
-	padding: 0px;
-	/*background-color: #456;*/
-}
-nav #navi li {
-	margin-right: 10px;
-	float: right;
+    line-height: 1.4em;
 }
 
-nav #g_navi{
-	list-style-type: none;
-	margin-right: -10px;
-	padding-left: 0;
-	overflow: hidden;
-	}
+header,
+nav,
+#level,
+#contents,
+footer {
+    width: 906.4px;
+    margin: 0 auto 0 auto;
+    /*background-color: #321;*/
+}
+
+#top {
+    overflow: hidden;
+}
+
+#top #navi {
+    /*display: block;*/
+
+    list-style-type: none;
+
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+}
+
+#navi li {
+    list-style-type: none;
+    margin-right: 10px;
+    margin-top: 74px;
+    margin-bottom: 0;
+     float: right;
+}
+
+#navi li a {
+    text-decoration: none;
+
+  }
+
+/*nav #g_navi {
+    list-style-type: none;
+    margin-right: -10px;
+    padding-left: 0;
+    overflow: hidden;
+}
+
 nav #g_navi li {
-	width: 200px;
-	margin-right: 10px;
-	float: left;
-}
+    width: 200px;
+    margin-right: 10px;
+    float: left;
+}*/
+
 nav #g_navi li a {
-	display: block;
-	height: 0;
-	padding-top: 70px;
-	overflow: hidden;
+    /*display: block;*/
+    /*height: 0;
+  padding-top: 70px;
+  overflow: hidden;*/
+    text-decoration: none;
 }
+
 nav #g_navi #nav_policy a {
-	background-image: url(../images/global_nav1.png);
+    /*background-image: url(../images/global_nav1.png);*/
 }
+
 nav #g_navi #nav_facility a {
-	background-image: url(../images/global_nav2.png);
+    /*background-image: url(../images/global_nav2.png);*/
 }
-nav  #g_navi #nav_sorce a {
-	background-image: url(../images/global_nav3.png);
+
+nav #g_navi #nav_sorce a {
+    /*background-image: url(../images/global_nav3.png);*/
 }
+
 nav #g_navi #nav_inquiry a {
-	background-image: url(../images/global_nav4.png);
+    /*background-image: url(../images/global_nav4.png);*/
 }
+
+
+#g_navi,
+#g_navi li,
+#g_navi li a {
+    /*text-align: center;*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    line-height: 1;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*#g_navi {
+  width: auto;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #ffffff;
+}*/
+
+#g_navi {
+    background: #222222;
+    /* Old browsers */
+
+    background: -moz-linear-gradient(bottom, #000000 0%, #222222 50%, #3c3c3c 51%, #393939 78%, #888888 100%);
+    background: -webkit-linear-gradient(bottom, #000000 0%, #222222 50%, #3c3c3c 51%, #393939 78%, #888888 100%);
+    background: -o-linear-gradient(bottom, #000000 0%, #222222 50%, #3c3c3c 51%, #393939 78%, #888888 100%);
+    background: -ms-linear-gradient(bottom, #000000 0%, #222222 50%, #3c3c3c 51%, #393939 78%, #888888 100%);
+    background: linear-gradient(to top, #000000 0%, #222222 50%, #3c3c3c 51%, #393939 78%, #888888 100%);
+}
+
+#g_navi:after,
+#g_navi:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+#g_navi li {
+    float: left;
+    display: block;
+    border-right: 1px solid rgba(0, 0, 0, 0.22);
+    z-index: 1;
+}
+
+#g_navi li::after {
+    content: "";
+    width: 100%;
+    height: 8px;
+    position: absolute;
+    border-top-left-radius: 50% 4px;
+    border-top-right-radius: 50% 4px;
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #222222 61%, #222222 100%);
+    background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #222222 61%, #222222 100%);
+    background: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #222222 61%, #222222 100%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #222222 61%, #222222 100%);
+    background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    z-index: 2;
+    bottom: 10px;
+}
+
+#g_navi li a {
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    z-index: 3;
+}
+
+#g_navi li a:hover,
+#g_navi #nav_home a {
+    color: #ffffff;
+}
+
+#g_navi li:hover,
+#g_navi li#nav_home {
+    background: #1275ae;
+    /* Old browsers */
+
+    background: -moz-linear-gradient(bottom, #0b4669 0%, #1275ae 50%, #1794dc 51%, #1691d8 78%, #98d2f4 100%);
+    background: -webkit-linear-gradient(bottom, #0b4669 0%, #1275ae 50%, #1794dc 51%, #1691d8 78%, #98d2f4 100%);
+    background: -o-linear-gradient(bottom, #0b4669 0%, #1275ae 50%, #1794dc 51%, #1691d8 78%, #98d2f4 100%);
+    background: -ms-linear-gradient(bottom, #0b4669 0%, #1275ae 50%, #1794dc 51%, #1691d8 78%, #98d2f4 100%);
+    background: linear-gradient(to top, #0b4669 0%, #1275ae 50%, #1794dc 51%, #1691d8 78%, #98d2f4 100%);
+}
+
+#g_navi li:hover::after,
+#g_navi li#nav_home::after {
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #1275ae 61%, #1275ae 100%);
+    background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #1275ae 61%, #1275ae 100%);
+    background: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #1275ae 61%, #1275ae 100%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #1275ae 61%, #1275ae 100%);
+    background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+
 #main {
-	width: 570px;
-	float: left;
+    width: 570px;
+    float: left;
 }
+
 #sub {
-	width: 220px;
-	float: right;
+    width: 220px;
+    float: right;
 }
+
 footer #pagetop {
-	float: right;
+    float: right;
 }
+
 footer #info_group {
-	clear: both;
+    clear: both;
 }
-a img{
-	width: 200px;
+
+a img {
+    width: 200px;
 }
-#top h1 {
-	margin-bottom: 0px;
-}
-#top h1 a {
-	display: block;
+
+
+#logo {
+    overflow: hidden;
+
 }
 
 #logo a img {
-	padding-top: 18px;
-	margin-right: 5px;
+    float: left;
+   /* margin-left: 20px;*/
+    padding-top: 18px;
+    width: 58px
+}
 
-	width: 58px
+#top #title h1 {
+    margin-bottom: 0px;
+
+    float: left;
 }
-#top h1 a{
-	margin-top: 0;
-position: relative;
+
+#title h1 a img {
+    height: 57px;
+    width: 200px;
+    margin-top: 0;
+   margin-left: 0px;
 }
+
 #main h1 {
-	margin: 0 0 30px 0;
-	padding: 30px 0 30px 0;
-	background-image: url(../images/back_h1_bottom.png), url(../images/back_h1_top.png);
-	background-repeat: no-repeat, no-repeat;
-	background-position: left bottom, left top;
-	color: #ffffff;
-	font-size: 180%;
-	text-align: center;
+    margin: 0 0 30px 0;
+    padding: 30px 0 30px 0;
+    background-image: url(../images/back_h1_bottom.png), url(../images/back_h1_top.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, left top;
+    color: #ffffff;
+    font-size: 180%;
+    text-align: center;
 }
-#policy #nav_policy a, #service #nav_service a, #facility #nav_facility a, #inquiry #nav_inquiry a, nav ul li a:hover {
-	background-position: 0 -70px;
+
+#policy #nav_policy a,
+#service #nav_service a,
+#facility #nav_facility a,
+#inquiry #nav_inquiry a,
+nav ul li a:hover {
+    background-position: 0 -70px;
 }
+
 /* 基本レイアウト ここまで↑ */
 
 /* トップページ ここから↓ */
 #topics ul {
-	list-style-type: none;
-	margin: 0;
-	padding-left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
 }
+
 #topics ul li {
-	margin-top: 20px;
-	padding: 0 10px 20px 160px;
-	border-bottom: 1px dotted #333333;
-	text-indent: -160px;
+    margin-top: 20px;
+    padding: 0 10px 20px 160px;
+    border-bottom: 1px dotted #333333;
+    text-indent: -160px;
 }
+
 /* トップページ ここまで↑ */
 
 /* 「当病院について」ページ ここから↓ */
 .h2_group {
-	margin-top: 20px;
-	overflow: hidden;
+    margin-top: 20px;
+    overflow: hidden;
 }
+
 .h2_group:last-child {
-	margin-bottom: 10px;
+    margin-bottom: 10px;
 }
+
 /* 「当病院について」ページ ここまで↑ */
 
 /* 「診療科のご案内」ページ ここから↓ */
 table thead tr {
-	background-color: #f3bf31;
-	color: #333333;
+    background-color: #f3bf31;
+    color: #333333;
 }
+
 table tbody tr:nth-child(even) {
-	background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
+
 /* 「診療科のご案内」ページ ここまで↑ */
 
 /* 「施設紹介」ページ ここから↓ */
 .facility_group figure {
-	width: 178px;
-	margin: 0 18px 25px 0;
-	float: left;
+    display: inline-block;
+    /* インラインブロック化 */
+    vertical-align: top;
+    /* 上端を揃える */
+  /*  width: 252px;*/
+    margin: 0 18px 25px 0;
 }
-.facility_group figure:nth-child(3) {
-	margin-right: 0;
+figcaption{
+ line-height: 150%;
+float: right;
 }
+.facility_group figure:nth-child(2) {
+    margin-right: 15px;
+}
+
+.facility_group figure:last-of-type:after {
+    content: "\a";
+    /*content: "bbbb";*/
+    background-color: red;
+    height: 10px;
+    background-position: left center;
+}
+
 /* 「施設紹介」ページ ここまで↑ */
 
 /* 「お問い合わせ」ページ ここから↓ */
@@ -157,6 +328,7 @@ input[type="text"],
 input[type="tel"],
 input[type="checkbox"],
 textarea {
-	border: 1px solid #666666;
+    border: 1px solid #666666;
 }
+
 /* 「お問い合わせ」ページ ここまで↑ */
